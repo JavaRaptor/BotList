@@ -1,0 +1,18 @@
+[
+    {
+        "user_id": "JavaRaptor",
+        "bot_id": "722109279758319746",
+        "nom_bot": "Fraeth",
+        "description": "Un bot qui r\u00e9unit une panoplie de commande et de fonctions",
+        "added_at": "2024-01-16 21:38:35",
+        "nbrVotes": 1,
+        "notes": [
+            {
+                "id": "JavaRaptor"
+            }
+        ],
+        "image": "uploads\/Fraeth.png",
+        "inviteLink": "https:\/\/discord.com\/api\/oauth2\/authorize?client_id=722109279758319746&permissions=0&scope=bot",
+        "categorie": "Multifonctions"
+    }
+]

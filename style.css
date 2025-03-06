@@ -1,0 +1,252 @@
+/* Styles globaux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles de l'en-tête */
+header {
+    background-color: #4285f4; /* Bleu */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Styles de la barre de navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #28a745;
+}
+
+/* Styles de la carte */
+.card {
+    justify-content: space-between;
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    display: flex;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+}
+
+.text-container {
+    flex: 1;
+}
+
+/* Styles du formulaire */
+.add-bot-form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e9ecef; /* Gris plus clair */
+    border: 1px solid #dee2e6; /* Gris plus clair */
+    border-radius: 8px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-bot-form select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-bot-form select::-ms-expand,
+.add-bot-form select::-ms-expand {
+    display: none;
+}
+
+.add-bot-form select:focus {
+    outline: none;
+    border-color: #28a745; /* Changement de couleur lorsqu'il est sélectionné */
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5); /* Effet d'ombre lorsqu'il est sélectionné */
+}
+
+.add-bot-form h2 {
+    color: #343a40; /* Gris foncé */
+}
+
+.add-bot-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.add-bot-form input,
+.add-bot-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.add-bot-form button {
+    background-color: #28a745; /* Vert */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-bot-form button:hover {
+    background-color: #218838; /* Vert plus foncé */
+}
+
+/* Boutons de vote et d'invitation à l'intérieur d'une carte */
+.card .vote-invite-buttons {
+    display: flex;
+    justify-content: left;
+    margin-top: 15px;
+}
+
+.card .vote-invite-buttons button {
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #007bff; /* Bleu */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card .vote-invite-buttons button:first-child {
+    margin-right: 10px;
+}
+
+/* Styles de la zone de glisser-déposer */
+.drop-area {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.drag-over {
+    background-color: #f0f8ff; /* Couleur de fond lorsque l'élément est survolé */
+}
+
+.drop-text {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Styles divers */
+.bot-image {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+form .search {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+label {
+    margin-right: 10px;
+}
+
+select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff; /* Bleu */
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Bleu plus foncé */
+}
+
+label[for="search"] {
+    margin-right: 10px;
+}
+
+#search {
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.added-time {
+    font-size: smaller;
+    color: #888; /* Remplacez #888 par le code couleur gris que vous préférez */
+    position: relative;
+    cursor: pointer; /* Ajout d'un curseur pour indiquer qu'il y a une action au survol */
+}
+
+.added-time::after {
+    content: attr(data-full-date);
+    position: absolute;
+    left: 0;
+    bottom: -1.5em;
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+    border-radius: 4px;
+    font-size: 0.8em;
+    display: none;
+}
+
+.added-time:hover::after {
+    display: block;
+}
